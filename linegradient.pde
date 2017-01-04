@@ -1,5 +1,5 @@
-float dh = 0.1; //delta height
-float dm = 8;  //delta margin
+float dh = 1; //delta height
+float dm = 25;  //delta margin
 
 
 void setup() {
@@ -14,6 +14,6 @@ void draw() {
     line(0, i, width, i);
     h += dh;
   }
-  saveFrame("result.png");
+  saveFrame(dh + " " + dm + " " + width + "x" + height + ".png");
   exit();
 }
